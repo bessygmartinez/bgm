@@ -1,6 +1,5 @@
 import React from "react";
 import $ from "jquery";
-import logo from "../../logo.svg";
 import "./nav.css";
 
 class Nav extends React.Component {

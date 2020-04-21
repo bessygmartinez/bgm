@@ -9,16 +9,7 @@ class App extends Component {
 
   componentDidMount() {
 
-     let script = document.createElement("script");
-    script.async = true;  
-    script.src="/bgm/assets/js/words.js";
-    
-    script.onload = () => this.onScriptLoad();
-
-    document.body.appendChild(script);
-  }
-
-  onScriptLoad = () => {
+     
     window.startWords();
   }
 

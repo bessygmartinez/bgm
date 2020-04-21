@@ -28,14 +28,14 @@ class App extends Component {
     script.async = true;  
     script.src="/bgm/assets/js/words.js";
     
-    script.onload = () => onScriptLoad();
+    // script.onload = () => onScriptLoad();
 
     document.body.append(script);
   
 
-  const onScriptLoad = () => {
-    window.startWords();
-  }
+  // const onScriptLoad = () => {
+  //   window.startWords();
+  // }
     
   return (
     <div>

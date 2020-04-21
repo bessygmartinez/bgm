@@ -8,11 +8,11 @@ import "./App.css";
 class App extends Component {
 
   componentDidMount() {
-     let script = document.createElement("script");
 
-    script.async = "true";
-    script.src="/assets/js/words.js";
+     let script = document.createElement("script");
     script.async = true;
+    script.src="/assets/js/words.js";
+    
     script.onload = () => this.onScriptLoad();
 
     document.body.appendChild(script);

@@ -25,7 +25,7 @@ class App extends Component {
   render () {
 
     let script = document.createElement("script");
-    script.async = true;  
+    script.async = false;  
     script.src="/bgm/assets/js/words.js";
     
     // script.onload = () => onScriptLoad();

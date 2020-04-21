@@ -3,7 +3,7 @@ let currentWord = 0;
 let words = [];
 let wordArray = [];
 
-startWords();
+// startWords();
 
 function startWords () {
   try {

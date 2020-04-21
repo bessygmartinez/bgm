@@ -8,13 +8,13 @@ import "./App.css";
 class App extends Component {
 
   componentDidMount() {
-    this.script = document.createElement("script");
+     let script = document.createElement("script");
 
-    this.script.src="/assets/js/words.js";
-    this.script.async = true;
-    this.script.onload = () => this.onScriptLoad();
+    script.src="/assets/js/words.js";
+    script.async = true;
+    script.onload = () => this.onScriptLoad();
 
-    document.body.appendChild(this.script);
+    document.body.appendChild(script);
   }
 
   onScriptLoad = () => {

@@ -7,13 +7,36 @@ import "./App.css";
 
 class App extends Component {
 
-  componentDidMount() {
+  // componentDidMount() {
 
-     
-    window.startWords();
-  }
+  //    let script = document.createElement("script");
+  //   script.async = true;  
+  //   script.src="/bgm/assets/js/words.js";
+    
+  //   script.onload = () => this.onScriptLoad();
+
+  //   document.body.append(script);
+  // }
+
+  // onScriptLoad = () => {
+  //   window.startWords();
+  // }
 
   render () {
+
+    let script = document.createElement("script");
+    script.async = true;  
+    script.src="/bgm/assets/js/words.js";
+    
+    script.onload = () => onScriptLoad();
+
+    document.body.append(script);
+  
+
+  const onScriptLoad = () => {
+    window.startWords();
+  }
+    
   return (
     <div>
       

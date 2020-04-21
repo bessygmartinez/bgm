@@ -10,6 +10,7 @@ class App extends Component {
   componentDidMount() {
      let script = document.createElement("script");
 
+    script.async = "true";
     script.src="/assets/js/words.js";
     script.async = true;
     script.onload = () => this.onScriptLoad();

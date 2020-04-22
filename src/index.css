@@ -37,7 +37,7 @@ p {
     animation: float 6s ease-in-out infinite;
   width: 500px;
   height: 500px;
-  z-index: -2;
+  z-index: -1000;
   text-align: center;
 }
 
@@ -99,7 +99,7 @@ p {
 .scroll-down {
   color: #D8EEE7;
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
   left: 50%;
   margin-left: -38px;
   width: 10px;

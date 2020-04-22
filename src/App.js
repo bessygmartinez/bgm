@@ -31,7 +31,7 @@ class App extends Component {
       // Get the real width of the sun
       let sun = $("#sun");
       let newImage = new Image();
-      newImage.src = sun.attr("src");
+      newImage.src = {sun}
       let imgWidth = 500;
       
       // distance over which zoom effect takes place

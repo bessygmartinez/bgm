@@ -78,7 +78,7 @@ p {
 }
 
 .sun-wrap {
-  position: absolute;
+  position: fixed;
   pointer-events: none;
   top: 50%;
   left: 50%;

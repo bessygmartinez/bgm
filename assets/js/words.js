@@ -3,8 +3,6 @@ let currentWord = 0;
 let words = [];
 let wordArray = [];
 
-startWords();
-
 function startWords () {
   try {
     words = document.getElementsByClassName('word');

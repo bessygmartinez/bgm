@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import sun from "./sun.svg"
+import $ from "jquery";
 import "./App.css";
 
 class App extends Component {
@@ -26,18 +27,65 @@ class App extends Component {
   render ()
   {
 
-    // let script = document.createElement("script");
-    // script.async = false;  
-    // script.src="/bgm/assets/js/words.js";
-    
-    // script.onload = () => onScriptLoad();
-
-    // document.body.append(script);
+    let sunSize = function() {
+      // Get the real width of the sun
+      let sun = $("#sun");
+      let newImage = new Image();
+      newImage.src = sun.attr("src");
+      let imgWidth = 500;
+      
+      // distance over which zoom effect takes place
+      let maxScrollDistance = 1000;
+      
+      // set to window height if larger
+      maxScrollDistance = Math.min(maxScrollDistance, $(window).height());
+      
+      // width at maximum zoom out (i.e. when window has scrolled maxScrollDistance)
+      let widthAtMax = 300;
+      
+      // calculate diff and how many pixels to zoom per pixel scrolled
+      let widthDiff = imgWidth - widthAtMax;
+      let pixelsPerScroll =(widthDiff / maxScrollDistance);
   
+      $(window).scroll(function () {
+          // the currently scrolled-to position - max-out at maxScrollDistance
+          let scrollTopPos = Math.min($(document).scrollTop(), maxScrollDistance);
+          
+          // how many pixels to adjust by
+          let scrollChangePx =  Math.floor(scrollTopPos * pixelsPerScroll);
+          
+          // calculate the new width
+          let zoomedWidth = imgWidth - scrollChangePx;
+          
+          // set the width
+          $('.sun').css('width', zoomedWidth);
+      });
+  };
+  
+  sunSize();
 
-  // const onScriptLoad = () => {
-  //   window.startWords();
-  // }
+  $(document).ready(function() {
+      
+      /* Every time the window is scrolled ... */
+      $(window).scroll( function(){
+      
+          /* Check the location of each desired element */
+          $('.hide-me').each( function(i){
+              
+              let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 400;
+              let bottom_of_window = $(window).scrollTop() + $(window).height();
+              
+              /* If the object is completely visible in the window, fade it */
+              if( bottom_of_window > bottom_of_object ){
+                  
+                  $(this).animate({'opacity':'1'},500);                        
+              }
+              
+          }); 
+      
+      });
+      
+  });
     
   return (
     <div>
@@ -45,10 +93,10 @@ class App extends Component {
       <Nav />
 
       <div className="container">
-        {/* <div className="sun-wrap">
+        <div className="sun-wrap">
           <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
           <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img>
-        </div> */}
+        </div>
         <div className="wrapper-div">
          <h1 className="center-align greeny-text">
             <span className="word">Web &nbsp; Developer</span>

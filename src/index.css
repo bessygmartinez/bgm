@@ -31,8 +31,8 @@ p {
   left: 50%;
   margin-left: -247px;
   margin-top: -215px;
-  -webkit-transform: translatey(0px);
-    transform: translatey(0px);
+  -webkit-transform: translate3d(0px);
+    transform: translate3d(0px);
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
   width: 500px;
@@ -67,8 +67,8 @@ p {
   display: inline-block;
   position: relative;
   float:none;
-  -webkit-transform: translateZ(25px);
-          transform: translateZ(25px);
+  -webkit-transform: translate3d(25px);
+          transform: translate3d(25px);
   -webkit-transform-origin: 50% 50% 25px;
           transform-origin: 50% 50% 25px;
 }

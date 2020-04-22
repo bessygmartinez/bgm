@@ -25,7 +25,7 @@ p {
 }
 
 .sun-wrap {
-  position: fixed;
+  position: absolute;
   pointer-events: none;
   top: 50%;
   left: 50%;

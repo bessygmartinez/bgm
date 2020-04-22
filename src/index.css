@@ -47,10 +47,6 @@ p {
   text-align: center;
   margin: 0 auto;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
 }
 
 .greeny-text {

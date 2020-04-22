@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Nav from "./components/Nav";
+import Words from "./components/Words";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import sun from "./sun.svg"
@@ -97,12 +98,13 @@ class App extends Component {
           <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
           {/* <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img> */}
         </div>
-        <div className="wrapper-div">
-         <h1 className="center-align greeny-text">
+        <div className="words-div">
+        <Words />
+         {/* <h1 className="center-align greeny-text">
             <span className="word">Web &nbsp; Developer</span>
             <span className="word">Graphic &nbsp; Designer</span>
             <span className="word">Miami-based</span>
-          </h1>
+          </h1> */}
           </div>
         
         <div className="scroll-down bounce-top"><i className="large material-icons">arrow_downward</i></div>

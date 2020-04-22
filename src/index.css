@@ -37,17 +37,20 @@ p {
     animation: float 6s ease-in-out infinite;
   width: 500px;
   height: 500px;
-  z-index: -1000;
+  z-index: -500;
   text-align: center;
 }
 
 .words-div {
   width: 100%;
-  height: 100vh;
+  padding-top: 46vh;
+  text-align: center;
+  margin: 0 auto;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 200;
+  z-index: 200; */
 }
 
 .greeny-text {
@@ -106,9 +109,7 @@ p {
   margin-left: -38px;
   width: 10px;
   height: 48px;
-  /* background-image: url(../images/scroll.svg);
-  background-size: contain; */
-  z-index: 1;
+  z-index: -550;
 }
 
 .hide-me

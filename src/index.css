@@ -46,7 +46,7 @@ p {
 
 .words-div {
   width: 100%;
-  padding-top: 46vh;
+  padding-top: 38vh;
   text-align: center;
   margin: 0 auto;
   /* height: 100vh;
@@ -192,6 +192,7 @@ p {
 @media only screen and (max-width: 812px) {
   .words-div h1 {
     font-size: 10vw;
+    position: relative;
   }
 }
 

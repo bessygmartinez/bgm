@@ -94,10 +94,10 @@ class App extends Component {
       <Nav />
 
       <div className="container">
-        <div className="sun-wrap">
+        {/* <div className="sun-wrap"> */}
           {/* <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img> */}
           {/* <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img> */}
-        </div>
+        {/* </div> */}
         <div className="words-div">
         <Words />
          {/* <h1 className="center-align greeny-text">

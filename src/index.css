@@ -41,7 +41,7 @@ p {
   text-align: center;
 }
 
-.wrapper-div {
+.words-div {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -174,7 +174,7 @@ p {
 }
 
 @media only screen and (max-width: 812px) {
-  .wrapper-div h1 {
+  .words-div h1 {
     font-size: 10vw;
   }
 }

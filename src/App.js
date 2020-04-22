@@ -7,30 +7,32 @@ import "./App.css";
 
 class App extends Component {
 
-  // componentDidMount() {
+  componentDidMount() {
+    this.onScriptLoad();
 
   //    let script = document.createElement("script");
   //   script.async = true;  
   //   script.src="/bgm/assets/js/words.js";
     
-  //   script.onload = () => this.onScriptLoad();
+    // script.onload = () => this.onScriptLoad();
 
   //   document.body.append(script);
-  // }
+  }
 
-  // onScriptLoad = () => {
-  //   window.startWords();
-  // }
+  onScriptLoad = () => {
+    window.startWords();
+  }
 
-  render () {
+  render ()
+  {
 
-    let script = document.createElement("script");
-    script.async = false;  
-    script.src="/bgm/assets/js/words.js";
+    // let script = document.createElement("script");
+    // script.async = false;  
+    // script.src="/bgm/assets/js/words.js";
     
     // script.onload = () => onScriptLoad();
 
-    document.body.append(script);
+    // document.body.append(script);
   
 
   // const onScriptLoad = () => {

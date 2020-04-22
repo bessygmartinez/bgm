@@ -39,6 +39,7 @@ p {
   height: 500px;
   z-index: -500;
   text-align: center;
+  -webkit-backface-visibility: hidden;
 }
 
 .words-div {
@@ -51,6 +52,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 200; */
+  -webkit-backface-visibility: hidden;
 }
 
 .greeny-text {
@@ -70,6 +72,7 @@ p {
   display: inline-block;
   position: relative;
   float:none;
+  -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(25px);
           transform: translate3d(25px);
   -webkit-transform-origin: 50% 50% 25px;
@@ -87,6 +90,7 @@ p {
 }
 
 .letter.behind {
+  -webkit-backface-visibility: hidden;
   -webkit-transform: rotateX(-90deg);
           transform: rotateX(-90deg);
 }

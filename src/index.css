@@ -77,22 +77,22 @@ p {
   display: none;
 }
 
-.sun-wrap {
-  position: fixed;
+/* .sun-wrap { */
+  /* position: fixed;
   pointer-events: none;
   top: 50%;
   left: 50%;
   margin-left: -247px;
-  margin-top: -215px;
+  margin-top: -215px; */
   /* -webkit-transform: translate3d(0px);
     transform: translate3d(0px);
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite; */
-  width: 500px;
+  /* width: 500px;
   height: 500px;
   z-index: -500;
-  text-align: center;
-}
+  text-align: center; */
+/* } */
 
 .words-div {
   width: 100%;

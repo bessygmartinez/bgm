@@ -16,6 +16,11 @@ p {
   width: 100%;
 }
 
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
 .sun {
   display: inline;
 }
@@ -24,26 +29,31 @@ p {
   display: none;
 }
 
-/* .sun-wrap { */
-  /* position: fixed;
+.sun-wrap {
+  position: fixed;
   pointer-events: none;
   top: 50%;
   left: 50%;
   margin-left: -247px;
-  margin-top: -215px; */
-  /* -webkit-transform: translate3d(0px);
+  margin-top: -215px;
+  -webkit-transform: translate3d(0px);
     transform: translate3d(0px);
     -webkit-animation: float 6s ease-in-out infinite;
-    animation: float 6s ease-in-out infinite; */
-  /* width: 500px;
+    animation: float 6s ease-in-out infinite;
+  width: 500px;
   height: 500px;
   z-index: -500;
-  text-align: center; */
-/* } */
+  text-align: center;
+}
+
+.stop-flickering {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
 
 .words-div {
   width: 100%;
-  padding-top: 38vh;
+  padding-top: 35vh;
   text-align: center;
   margin: 0 auto;
   height: 100vh;
@@ -170,6 +180,9 @@ p {
 }
 
 @media only screen and (max-width: 812px) {
+  .words-div {
+    padding-top: 38vh;
+  }
   .words-div h1 {
     font-size: 10vw;
     position: relative;

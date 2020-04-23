@@ -97,7 +97,7 @@ class App extends Component {
         <div className="hero">
         <div className="sun-wrap stop-flickering">
           <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
-          <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img>
+          {/* <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img> */}
         </div>
         <div className="words-div stop-flickering">
         <Words />

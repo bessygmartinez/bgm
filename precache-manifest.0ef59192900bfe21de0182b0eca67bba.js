@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edf82f2cafcf3c5c16b71442626978ed",
+    "revision": "14ab8bdaccdb0afce305c8159afd49f7",
     "url": "/bgm/index.html"
   },
   {
-    "revision": "c3755d9e170368ffc28e",
-    "url": "/bgm/static/css/main.e1876320.chunk.css"
+    "revision": "001d9e0e4e503f9cbeed",
+    "url": "/bgm/static/css/main.84e3fdb0.chunk.css"
   },
   {
     "revision": "d9c0eeff6244e62c130d",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bgm/static/js/2.d988f715.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c3755d9e170368ffc28e",
-    "url": "/bgm/static/js/main.e693fd7e.chunk.js"
+    "revision": "001d9e0e4e503f9cbeed",
+    "url": "/bgm/static/js/main.e91c1b95.chunk.js"
   },
   {
     "revision": "48a3be8087c0d4ddf62e",
     "url": "/bgm/static/js/runtime-main.40bcecff.js"
   },
   {
-    "revision": "a24c3336dcd0abad358bf67728b77d99",
-    "url": "/bgm/static/media/bulb.a24c3336.svg"
+    "revision": "841ce4d919111935b6ca8f8c2080a171",
+    "url": "/bgm/static/media/cloud1.841ce4d9.svg"
   },
   {
     "revision": "8f2bf00f46c279aad68d1cd31ecb5b1f",

@@ -33,7 +33,7 @@ class App extends Component {
       let sunImg = $("#sun");
       // let newImage = new Image();
       sunImg.src = sun;
-      let imgWidth = 500;
+      let imgWidth = 450;
       
       // distance over which zoom effect takes place
       let maxScrollDistance = 1000;
@@ -97,7 +97,7 @@ class App extends Component {
         <div className="hero">
         <div className="sun-wrap stop-flickering">
           <img src={sun} alt="sun" className="sun stop-flickering" id="sun" width="100%"></img>
-          {/* <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img> */}
+          <img src={sun} alt="sun" className="sun-mob stop-flickering" id="sun" width="100%"></img>
         </div>
         <div className="words-div">
         <Words />

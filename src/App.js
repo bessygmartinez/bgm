@@ -96,10 +96,10 @@ class App extends Component {
       <div className="container">
         <div className="hero">
         <div className="sun-wrap stop-flickering">
-          <img src={sun} alt="sun" className="sun stop-flickering" id="sun" width="100%"></img>
-          <img src={sun} alt="sun" className="sun-mob stop-flickering" id="sun" width="100%"></img>
+          <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
+          <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img>
         </div>
-        <div className="words-div">
+        <div className="words-div stop-flickering">
         <Words />
          {/* <h1 className="center-align greeny-text">
             <span className="word">Web &nbsp; Developer</span>

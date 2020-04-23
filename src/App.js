@@ -36,7 +36,7 @@ class App extends Component {
       let imgWidth = 450;
       
       // distance over which zoom effect takes place
-      let maxScrollDistance = 1000;
+      let maxScrollDistance = 900;
       
       // set to window height if larger
       maxScrollDistance = Math.min(maxScrollDistance, $(window).height());
@@ -73,7 +73,7 @@ class App extends Component {
           /* Check the location of each desired element */
           $('.hide-me').each( function(i){
               
-              let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 600;
+              let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 450;
               let bottom_of_window = $(window).scrollTop() + $(window).height();
               
               /* If the object is completely visible in the window, fade it */
@@ -97,15 +97,10 @@ class App extends Component {
         <div className="hero">
         <div className="sun-wrap stop-flickering">
           <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
-          <img src={sun} alt="sun" className="sun-mob" width="100%"></img>
+          <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img>
         </div>
         <div className="words-div stop-flickering">
         <Words />
-         {/* <h1 className="center-align greeny-text">
-            <span className="word">Web &nbsp; Developer</span>
-            <span className="word">Graphic &nbsp; Designer</span>
-            <span className="word">Miami-based</span>
-          </h1> */}
           </div>
         
         <div className="scroll-down bounce-top"><i className="large material-icons">arrow_downward</i></div>

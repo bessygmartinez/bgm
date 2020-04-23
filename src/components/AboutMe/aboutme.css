@@ -4,24 +4,24 @@
 
 .about-me-text {
     color: #D8EEE7;
-    padding: 20% 7%;
+    padding: 7% 7%;
     width: 100%;
-    margin: 80% auto 0%;
+    margin: 16% auto 0%;
     z-index: 500;
     position: relative;
     background-color: #74ac957c;
     /* box-shadow: 0 0 25px rgb(79, 117, 102); */
 }
-
+/* 
 @media only screen and (min-width: 650px) {
    .about-me-text {
     color: #D8EEE7;
     padding: 8% 8%;
     width: 100%;
-    margin: 40% auto 4%;
+    margin: 7% auto 4%;
     z-index: 500;
     position: relative;
-    background-color: #74ac957c;
+    background-color: #74ac957c; */
     /* box-shadow: 0 25px 25px rgb(79, 117, 102); */
-} 
-}
+/* }  */
+/* } */

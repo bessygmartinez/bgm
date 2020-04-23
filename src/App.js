@@ -42,7 +42,7 @@ class App extends Component {
       maxScrollDistance = Math.min(maxScrollDistance, $(window).height());
       
       // width at maximum zoom out (i.e. when window has scrolled maxScrollDistance)
-      let widthAtMax = 300;
+      let widthAtMax = 350;
       
       // calculate diff and how many pixels to zoom per pixel scrolled
       let widthDiff = imgWidth - widthAtMax;
@@ -73,7 +73,7 @@ class App extends Component {
           /* Check the location of each desired element */
           $('.hide-me').each( function(i){
               
-              let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 400;
+              let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 600;
               let bottom_of_window = $(window).scrollTop() + $(window).height();
               
               /* If the object is completely visible in the window, fade it */
@@ -97,7 +97,7 @@ class App extends Component {
         <div className="hero">
         <div className="sun-wrap stop-flickering">
           <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img>
-          <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img>
+          <img src={sun} alt="sun" className="sun-mob" width="100%"></img>
         </div>
         <div className="words-div stop-flickering">
         <Words />
@@ -111,7 +111,7 @@ class App extends Component {
         <div className="scroll-down bounce-top"><i className="large material-icons">arrow_downward</i></div>
         </div>
           
-        <div className="about-me hide-me">
+        <div className="about-me">
           <AboutMe />
         </div>
 

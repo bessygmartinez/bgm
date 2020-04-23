@@ -94,10 +94,11 @@ class App extends Component {
       <Nav />
 
       <div className="container">
-        {/* <div className="sun-wrap"> */}
-          {/* <img src={sun} alt="sun" className="sun" id="sun" width="100%"></img> */}
+        <div className="hero">
+        <div className="sun-wrap stop-flickering">
+          <img src={sun} alt="sun" className="sun stop-flickering" id="sun" width="100%"></img>
           {/* <img src={sun} alt="sun" className="sun-mob" id="sun" width="100%"></img> */}
-        {/* </div> */}
+        </div>
         <div className="words-div">
         <Words />
          {/* <h1 className="center-align greeny-text">
@@ -108,7 +109,8 @@ class App extends Component {
           </div>
         
         <div className="scroll-down bounce-top"><i className="large material-icons">arrow_downward</i></div>
-
+        </div>
+          
         <div className="about-me hide-me">
           <AboutMe />
         </div>

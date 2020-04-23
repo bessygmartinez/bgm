@@ -22,12 +22,12 @@ p {
 }
 
 .sun {
-  display: none;
-}
-
-.sun-mob {
   display: inline;
 }
+
+/* .sun-mob {
+  display: inline;
+} */
 
 .sun-wrap {
   position: fixed;

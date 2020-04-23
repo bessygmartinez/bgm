@@ -1,18 +1,18 @@
 import React from "react";
 import "./skills.css";
-import bulb from "./bulb.svg";
+import cloud1 from "./cloud1.svg";
 
 function Skills() {
     return (
         <div className="resourceful">
-            <div className="bulb-svg hide-me">
-                <img src={bulb} alt="ligt bulb" className="bulb"></img>
+            <div className="cloud1-svg hide-me vibrate-3">
+                <img src={cloud1} alt="cloud1" className="cloud1"></img>
             </div>
             <h3 className="hide-me">
-                Resourceful
+                Skills Go Here
             </h3>
             <p className="hide-me">
-                My strengths 
+               Blah blah blah blah.
             </p>
         </div>
     )

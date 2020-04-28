@@ -20,7 +20,7 @@ function Skills() {
 
         <div className="developer">
             <div className="cloud2-svg hide-me vibrate-2">
-                <img src={cloud1} alt="cloud" className="cloud1 flip-cloud"></img>
+                <img src={cloud1} alt="cloud" className="cloud2 flip-cloud"></img>
             </div>
             <h3 className="hide-me clearfix dev-heading">
                 Developer

@@ -1,72 +1,126 @@
-.skills {
-    color: #D8EEE7;
-    background-color: transparent;
-    padding: 11% 7%;
-    width: 100%;
-    position: relative;
-    z-index: 500;
-    margin-top: 100px;
-}
+    .skills {
+        color: #D8EEE7;
+        background-color: transparent;
+        padding: 11% 7%;
+        width: 100%;
+        position: relative;
+        z-index: 500;
+        margin-top: 100px;
+    }
 
-.skills h3 {
-    font-size: 5vw;
-    margin-top: 70px;
-}
+    .skills h3 {
+        font-size: 10vw;
+        margin-top: 55px;
+        margin-bottom: 0px;
+        color: white;
+    }
 
-.resourceful{
-    width: 100%;
-    float: none;
-    padding: 0;
-    text-align: left;
-}
+    .skills p {
+        font-size: 6.5vw;
+        margin-top: 0px;
+        color: white;
+    }
 
-.cloud1-svg {
-    position: relative;
-	top:60px;
-	left:0;
-	width: 35vw;
-	z-index: 100;
-}
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
-.cloud1 {
-    width: 100%;
-}
+    .designer {
+        width: 100%;
+        float: none;
+        padding: 0;
+        text-align: left;
+    }
 
-.vibrate-3 {
-	-webkit-animation: vibrate-3 6s linear infinite alternate-reverse forwards;
-	        animation: vibrate-3 6s linear infinite alternate-reverse forwards;
-}
+    .cloud1-svg {
+        position: relative;
+        top:60px;
+        left:0;
+        width: 55vw;
+        z-index: 100;
+    }
 
-@-webkit-keyframes vibrate-3 {
+    .cloud1 {
+        width: 100%;
+    }
+
+    .cloud2-svg {
+        position: relative;
+        top:60px;
+        float: right;
+        margin-right: 0;
+        padding-right: 0;
+        width: 55vw;
+        z-index: 100;
+    }
+
+    .flip-cloud {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .developer {
+        width: 100%;
+        float: right;
+        padding: 0;
+        text-align: right;
+    }
+
+    .dev-heading {
+        padding-top: 55px;
+    }
+
+    .vibrate-2 {
+        -webkit-animation: vibrate-2 5s linear infinite alternate-reverse both;
+                animation: vibrate-2 5s linear infinite alternate-reverse both;
+    }
+
+    .vibrate-3 {
+        -webkit-animation: vibrate-3 8s linear infinite both;
+                animation: vibrate-3 8s linear infinite both;
+    }
+
+    @media only screen and (min-width: 650px) {
+
+        .cloud1-svg {
+            width: 35vw;
+        }
+
+        .cloud2-svg {
+            width: 30vw;
+        }
+
+        .skills h3 {
+            font-size: 5vw;
+        }
+
+        .skills p {
+            font-size: 2.5vw;
+        }
+    
+    }
+
+/**
+ * ----------------------------------------
+ * animation vibrate-2
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-2 {
     0% {
       -webkit-transform: translate(0);
               transform: translate(0);
-    }
-    10% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
     }
     20% {
       -webkit-transform: translate(2px, -2px);
               transform: translate(2px, -2px);
     }
-    30% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
     40% {
       -webkit-transform: translate(2px, 2px);
               transform: translate(2px, 2px);
     }
-    50% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
     60% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    70% {
       -webkit-transform: translate(-2px, 2px);
               transform: translate(-2px, 2px);
     }
@@ -74,45 +128,25 @@
       -webkit-transform: translate(-2px, -2px);
               transform: translate(-2px, -2px);
     }
-    90% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
     100% {
       -webkit-transform: translate(0);
               transform: translate(0);
     }
   }
-  @keyframes vibrate-3 {
+  @keyframes vibrate-2 {
     0% {
       -webkit-transform: translate(0);
               transform: translate(0);
-    }
-    10% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
     }
     20% {
       -webkit-transform: translate(2px, -2px);
               transform: translate(2px, -2px);
     }
-    30% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
     40% {
       -webkit-transform: translate(2px, 2px);
               transform: translate(2px, 2px);
     }
-    50% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
     60% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    70% {
       -webkit-transform: translate(-2px, 2px);
               transform: translate(-2px, 2px);
     }
@@ -120,13 +154,108 @@
       -webkit-transform: translate(-2px, -2px);
               transform: translate(-2px, -2px);
     }
-    90% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
     100% {
       -webkit-transform: translate(0);
               transform: translate(0);
     }
   }
+
+/**
+ * ----------------------------------------
+ * animation vibrate-3
+ * ----------------------------------------
+ */
+
+    @-webkit-keyframes vibrate-3 {
+        0% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+        10% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        20% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        30% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+        40% {
+        -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+        }
+        50% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        60% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        70% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+        80% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        90% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        100% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+    }
+    @keyframes vibrate-3 {
+        0% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+        10% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        20% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        30% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+        40% {
+        -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+        }
+        50% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        60% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        70% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+        80% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+        90% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+        100% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+    }
   

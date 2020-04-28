@@ -4,7 +4,6 @@
         padding: 11% 7%;
         width: 100%;
         position: relative;
-        z-index: 500;
         margin-top: 100px;
     }
 
@@ -39,11 +38,17 @@
         top:60px;
         left:0;
         width: 55vw;
-        z-index: 100;
+        z-index: -200;
     }
 
     .cloud1 {
         width: 100%;
+        z-index: -200;
+    }
+
+    .cloud2 {
+        width: 100%;
+        z-index: -200;
     }
 
     .cloud2-svg {
@@ -53,7 +58,7 @@
         margin-right: 0;
         padding-right: 0;
         width: 55vw;
-        z-index: 100;
+        z-index: -200;
     }
 
     .flip-cloud {

@@ -37,7 +37,7 @@
         position: relative;
         top:60px;
         left:0;
-        width: 55vw;
+        width: 60vw;
         z-index: -200;
     }
 
@@ -57,7 +57,7 @@
         float: right;
         margin-right: 0;
         padding-right: 0;
-        width: 55vw;
+        width: 75vw;
         z-index: -200;
     }
 
@@ -90,11 +90,11 @@
     @media only screen and (min-width: 650px) {
 
         .cloud1-svg {
-            width: 35vw;
+            width: 45vw;
         }
 
         .cloud2-svg {
-            width: 30vw;
+            width: 45vw;
         }
 
         .skills h3 {
@@ -263,4 +263,3 @@
                 transform: translate(0);
         }
     }
-  

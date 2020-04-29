@@ -73,11 +73,11 @@ class App extends Component {
           /* Check the location of each desired element */
           $('.hide-me').each( function(i){
               
-              let bottom_of_object = $(this).offset().top + $(this).outerHeight(false) -100;
+              let bottom_of_object = $(this).offset().top + $(this).outerHeight(false);
               let bottom_of_window = $(window).scrollTop() + $(window).height();
               
               /* If the object is completely visible in the window, fade it */
-              if( bottom_of_window > bottom_of_object ){
+              if( bottom_of_window > bottom_of_object - 300 ){
                   
                   $(this).animate({'opacity':'1'}, 350);                        
               }

@@ -49,7 +49,7 @@ function Skills() {
         <div className="rain">
 
                     <div className="cloud4-svg hide-me">
-                    <img src={cloud1} alt="rain cloud" className="cloud2 vibrate-2 hide-me"></img>
+                    <img src={cloud1} alt="rain cloud" className="cloud2 hide-me"></img>
                     </div>
 
                 <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow">

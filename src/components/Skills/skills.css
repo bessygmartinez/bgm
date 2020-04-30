@@ -47,6 +47,11 @@
         text-align: left;
     }
 
+    .rain {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
     .cloud1 {
         width: 100%;
         z-index: -200;

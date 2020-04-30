@@ -54,7 +54,7 @@ function Skills() {
 
                 <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow">
 				<div className="ac-animated-svg-icon-contents">
-				<div className="ac-animated-svg-cloudrain">
+				<div className="ac-animated-svg-cloudrain rain">
                 <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>

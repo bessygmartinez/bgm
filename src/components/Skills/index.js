@@ -53,8 +53,8 @@ function Skills() {
                     </div>
 
                 <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow stop-flickering">
-				<div className="ac-animated-svg-icon-contents stop-flickering">
-				<div className="ac-animated-svg-cloudrain stop-flickering">
+				<div className="ac-animated-svg-icon-contents">
+				<div className="ac-animated-svg-cloudrain">
                 <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>

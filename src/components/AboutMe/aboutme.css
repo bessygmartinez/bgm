@@ -2,11 +2,19 @@
     margin:0;
 }
 
+.about-me h2 {
+    font-size: 5vh;
+}
+
+.about-me p {
+    font-size: 6vw;
+}
+
 .about-me-text {
-    color: #D8EEE7;
+    color: #edfdf8;
     padding: 7% 7%;
     width: 100%;
-    margin: 2% auto 0%;
+    margin: 0% auto 0%;
     z-index: 500;
     position: relative;
     background-color: #74ac957c;
@@ -19,11 +27,19 @@
         padding: 0% 20%;
     }
 
+    .about-me h2 {
+        font-size: 4vw;
+    }
+
+    .about-me p {
+        font-size: 2.2vw;
+    }
+
    .about-me-text {
-    color: #D8EEE7;
+    color: #edfdf8;
     padding: 8% 8%;
     width: 100%;
-    margin: 7% auto 4%;
+    margin: 0% auto 4%;
     z-index: 500;
     position: relative;
     background-color: #74ac957c;

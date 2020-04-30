@@ -54,13 +54,13 @@ function Skills() {
 
                 <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow">
 				<div className="ac-animated-svg-icon-contents">
-				<div className="ac-animated-svg-cloudrain stop-flickering">
-                <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-4"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-5"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-6"></img>
+				<div className="ac-animated-svg-cloudrain">
+                <img src={drop} alt="drop" className="svg-drop svg-drop-1 stop-flickering"></img>
+                <img src={drop} alt="drop" className="svg-drop svg-drop-2 stop-flickering"></img>
+                <img src={drop} alt="drop" className="svg-drop svg-drop-3 stop-flickering"></img>
+                <img src={drop} alt="drop" className="svg-drop svg-drop-4 stop-flickering"></img>
+                <img src={drop} alt="drop" className="svg-drop svg-drop-5 stop-flickering"></img>
+                <img src={drop} alt="drop" className="svg-drop svg-drop-6 stop-flickering"></img>
 
                 </div>
                 </div>

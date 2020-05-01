@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Words from "./components/Words";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 import sun from "./sun.svg"
 import $ from "jquery";
 import "./App.css";
@@ -110,10 +111,11 @@ class App extends Component {
           <AboutMe />
         </div>
 
-        <div className="skills">
           <Skills />
-        </div>
 
+        <div className="work">
+          <Work />
+        </div>
         
       </div>
     </div>

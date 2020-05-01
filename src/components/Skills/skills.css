@@ -48,6 +48,7 @@
     }
 
     .rain {
+        position: relative;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-perspective: 1000;
@@ -310,6 +311,7 @@
 .ac-animated-svg-icon {
     left: 50%;
     top: 56.5%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     overflow: hidden;
   }

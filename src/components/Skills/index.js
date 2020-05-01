@@ -5,8 +5,7 @@ import drop from "./drop.svg";
 
 function Skills() {
     return (
-        <div>
-
+        <div className="skills">
         <div className="designer">
             <div className="cloud1-svg hide-me vibrate-3">
                 <img src={cloud1} alt="cloud" className="cloud1 hide-me"></img>
@@ -46,9 +45,9 @@ function Skills() {
             </p>
         </div>
 
-        <div className="rain">
 
-                    <div className="cloud4-svg hide-me">
+
+                    <div className="cloud4-svg hide-me clearfix">
                     <img src={cloud1} alt="rain cloud" className="cloud2 vibrate-2 hide-me"></img>
                     </div>
 
@@ -65,9 +64,8 @@ function Skills() {
                 </div>
                 </div>
                 </div>
+                </div>
 
-        </div>
-</div>
     )
 }
 

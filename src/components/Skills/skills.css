@@ -347,7 +347,7 @@
     z-index: 2;
 }
 
-.ac-animated-svg-icon:hover .ac-animated-svg-cloudrain .svg-cloud, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cloudrain .svg-cloud {
+/* .ac-animated-svg-icon:hover .ac-animated-svg-cloudrain .svg-cloud, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cloudrain .svg-cloud {
     -webkit-animation: acAnimatedSvgIconCloudRainCloudAnimation 6s linear infinite;
     -moz-animation: acAnimatedSvgIconCloudRainCloudAnimation 6s linear infinite;
     -ms-animation: acAnimatedSvgIconCloudRainCloudAnimation 6s linear infinite;
@@ -365,7 +365,7 @@
     6% {
         width: 98%;
     }
-}
+} */
 
 .ac-animated-svg-cloudrain .svg-drop {
     top: 51%;

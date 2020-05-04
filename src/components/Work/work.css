@@ -2,10 +2,23 @@
     width: 100%;
     position: relative;
     margin-top: -210%;
-    background-color: #273040ed;
-    z-index: 120;
-    padding: 0 0 0% 0;
-    box-shadow: 0 0 150px #000000a6;
+    color: #edfdf8;
+    background-color: transparent;
+    z-index: 300;
+    padding: 0 8% 0 8%;
+    text-align: center;
+    /* box-shadow: 0 0 150px #000000a6; */
+}
+
+.workpic {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card p {
+    font-size: 2vh;
+    color: #8BD0B4;
 }
 
 /**
@@ -16,6 +29,14 @@
 
  @media only screen and (min-width: 650px) {
      .work {
-         margin-top: -80%;
+         margin-top: -63%;
      }
+
+     .work-row {
+         margin-top: 7%;
+     }
+
+     .work h3 {
+        font-size: 5vw;
+    }
  }

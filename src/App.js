@@ -29,7 +29,7 @@ class App extends Component {
   render ()
   {
 
-    let sunSize = function() {
+    function sunSize() {
       // Get the real width of the sun
       let sunImg = $("#sun");
       // let newImage = new Image();

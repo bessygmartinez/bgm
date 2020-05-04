@@ -6,6 +6,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #ED5B46;
+}
+
+a:hover {
+  color: #f7e06c;
+}
+
 p {
   font-size: 2em;
 }

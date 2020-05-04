@@ -571,7 +571,7 @@
         /*icon - size*/
         width: 40vw;
         height: 100vh;
-        display: inline-block;
+        /* display: inline-block; */
         position: relative;
         box-sizing: border-box;
         text-align: center;

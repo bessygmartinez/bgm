@@ -29,7 +29,8 @@ function Skills() {
             <p className="hide-me">
                 I love to code and watch it come to life in the browser. Some of the languages
                 I use and continue to develop are HTML5, CSS3, JavaScript, and SQL. I also work with React, JSX, jQuery,
-                Express Handlebars, Node, Express, MySQL, MongoDB, Passport, JWT, and am familiar with GitHub and Heroku.
+                Node, Express, MySQL, MongoDB, Express Handlebars, Passport, JWT, and am familiar with GitHub and Heroku, among
+                other technologies.
             </p>
         </div>
 

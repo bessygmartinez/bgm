@@ -37,11 +37,11 @@
     border-bottom-right-radius: 30px;
 }
 
-.card .card-title {
-    font-size: 1.5vw;
+.card .card-image img {
+    border-radius: 15px;
 }
 
-.card .card-image img {
+.card .card-reveal {
     border-radius: 15px;
 }
 

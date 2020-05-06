@@ -2,23 +2,56 @@
     width: 100%;
     position: relative;
     margin-top: -210%;
-    color: #edfdf8;
     background-color: transparent;
-    z-index: 300;
+    z-index: 50;
     padding: 0 8% 0 8%;
     text-align: center;
     /* box-shadow: 0 0 150px #000000a6; */
 }
 
-.workpic {
+.work h3 {
+    color: #edfdf8;
+}
+
+.workpic-div {
     width: 200px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.card p {
-    font-size: 2vh;
-    color: #8BD0B4;
+.workpic {
+    margin-top: 25px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #ED5B46;
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.card .card-action {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card .card-title {
+    font-size: 1.5vw;
+}
+
+.card .card-image img {
+    border-radius: 15px;
+}
+
+.card .card-content {
+    padding-bottom: 0px;
+}
+
+.trans-bg {
+    background-color: #ffffffda;
+    /* background-color: #74ac957c; */
 }
 
 /**

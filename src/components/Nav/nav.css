@@ -24,7 +24,16 @@
     margin-top:20%;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    z-index: 0;
+    height: 0%;
+}
+
+.nav-items h2 {
+    margin: 0;
+    font-size: 0;
+}
+
+.nav-items p {
+    margin: 0;
 }
 
 .nav-items.active {
@@ -34,9 +43,20 @@
     z-index: 100;
 }
 
+.nav-items.active h2 {
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: 2.3733333333rem 0 1.424rem 0;
+}
+
 .nav-col {
     float: left;
     margin: 27px 140px 20px 0;
+    height: 0%;
+}
+
+.nav-items.active .nav-col {
+    height: fit-content;
 }
 
 .nav-bg {

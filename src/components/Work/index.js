@@ -17,18 +17,16 @@ function Work () {
                 <div className="card trans-bg sticky-action">
                     <div className="card-image waves-effect waves-block waves-light workpic-div">
                     <img src="/bgm/assets/img/work/DreMartinez_thumb.jpg" alt="Dre Martinez"
-                    className="activator workpic" width="100%"></img>
+                    className="activator workpic responsive-img" width="100%"></img>
                     </div>
                     <div className="card-content">
-                        <span className="card-title activator blue-grey-text text-darken-1">
-                            DreMartinez.com
-                            <i className="material-icons right">more_vert</i>
+                        <span className="card-title blue-grey-text text-darken-1">
+                        <a href="http://www.dremartinez.com" target="_blank" rel="noopener noreferrer">DreMartinez.com</a>
+                        <i className="material-icons activator right">expand_less</i>
                             </span>
                             </div>
-                            <div className="card-action left-align trans-bg blue-grey-text text-darken-1">
-                                <a href="http://www.dremartinez.com" target="_blank" rel="noopener noreferrer">
-                                DreMartinez.com</a>
-                                <br></br>GitHub: N/A
+                            <div className="card-title card-action left-align trans-bg blue-grey-text text-darken-1">
+                                GitHub: N/A
                     </div>
                     <div className="card-reveal">
                     <span className="card-title blue-grey-text text-darken-1">
@@ -47,15 +45,13 @@ function Work () {
                     className="activator workpic" width="100%"></img>
                     </div>
                     <div className="card-content">
-                        <span className="card-title activator blue-grey-text text-darken-1">
-                            kairos
-                            <i className="material-icons right">more_vert</i>
+                        <span className="card-title blue-grey-text text-darken-1">
+                        <a href="http://kairos2020.herokuapp.com" target="_blank" rel="noopener noreferrer">kairos</a>
+                            <i className="material-icons activator right">more_vert</i>
                             </span>
                             </div>
-                            <div className="card-action left-align trans-bg blue-grey-text text-darken-1">
-                                <a href="http://kairos2020.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                                kairos</a>
-                                <br></br>GitHub: <a href="https://github.com/bessygmartinez/kairos" target="_blank" rel="noopener noreferrer">
+                            <div className="card-title card-action left-align trans-bg blue-grey-text text-darken-1">
+                                    GitHub: <a href="https://github.com/bessygmartinez/kairos" target="_blank" rel="noopener noreferrer">
                                     Repo
                                 </a>
                             </div>
@@ -82,22 +78,27 @@ function Work () {
                     className="activator workpic" width="100%"></img>
                     </div>
                     <div className="card-content">
-                        <span className="card-title activator blue-grey-text text-darken-1">
-                            Google Books Search
-                            <i className="material-icons right">more_vert</i>
+                        <span className="card-title blue-grey-text text-darken-1">
+                        <a href="https://warm-taiga-87514.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            Google Books Search</a>
+                            <i className="material-icons activator right">more_vert</i>
                             </span>
                             </div>
-                            <div className="card-action left-align blue-grey-text text-darken-1">
-                                <a href="https://warm-taiga-87514.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                Google Books Search</a>
-                                <br></br>GitHub: <a href="https://github.com/bessygmartinez/GoogleBooksSearch" target="_blank" rel="noopener noreferrer">
+                            <div className="card-title card-action left-align blue-grey-text text-darken-1">
+                                    GitHub: <a href="https://github.com/bessygmartinez/GoogleBooksSearch" target="_blank" rel="noopener noreferrer">
                                     Repo
                                 </a>
                     </div>
                     <div className="card-reveal">
                     <span className="card-title blue-grey-text text-darken-1">
                         Google Books Search<i className="material-icons right">close</i></span>
-                        <p className="blue-grey-text text-darken-1">Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p className="blue-grey-text text-darken-1">
+                        A web app to search for books via Google Books API, where you can store your favorites.
+						</p>
+                        <small className="blue-grey-text text-darken-1">
+                        HTML • CSS • JavaScript • React • Node • Express • 
+							Mongoose • Materialize • MongoDB • Heroku
+                            </small>
                     </div>
                 </div>
             </div>

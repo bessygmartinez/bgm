@@ -24,8 +24,14 @@
     margin-top: 25px;
 }
 
+i.right {
+    cursor: pointer;
+}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
     color: #ED5B46;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .card {
@@ -45,8 +51,21 @@
     border-radius: 15px;
 }
 
+.card .card-title {
+    font-size: 20px;
+}
+
+.card-reveal .card-title {
+    font-size: 20px;
+}
+
 .card .card-content {
     padding-bottom: 0px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    font-size: 20px;
+    text-transform: none;
 }
 
 .trans-bg {

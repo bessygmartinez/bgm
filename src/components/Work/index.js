@@ -154,9 +154,9 @@ render()
           <li>
       <div className="collapsible-header blue-grey-text text-darken-1 "><i className="material-icons">expand_more</i>
       <div className="row">
-          <div className="col s4 m4 l4">Defunct Disney</div>
-          <div className="col s4 m4 l4">Raspa El Platano</div>
-          <div className="col s4 m4 l4">Tempo</div>
+          <div className="col s12 m4 l4">Defunct Disney</div>
+          <div className="col s12 m4 l4">Raspa El Platano</div>
+          <div className="col s12 m4 l4">Tempo</div>
           </div>
       </div>
       <div className="row collapsible-body">
@@ -298,9 +298,9 @@ render()
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
-          <div className="col s4 m4 l4">Good Burger Log</div>
-          <div className="col s4 m4 l4">Waifu Finder</div>
-          <div className="col s4 m4 l4">Bamazon</div>
+          <div className="col s12 m4 l4">Good Burger Log</div>
+          <div className="col s12 m4 l4">Waifu Finder</div>
+          <div className="col s12 m4 l4">Bamazon</div>
           </div>
       </div>
         <div className="row collapsible-body">
@@ -440,9 +440,9 @@ render()
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
-          <div className="col s4 m4 l4">LIRI</div>
-          <div className="col s4 m4 l4">Scene It</div>
-          <div className="col s4 m4 l4">Train Data Limited</div>
+          <div className="col s12 m4 l4">LIRI</div>
+          <div className="col s12 m4 l4">Scene It</div>
+          <div className="col s12 m4 l4">Train Data Limited</div>
           </div>
           </div>
       <div className="row collapsible-body">
@@ -582,9 +582,9 @@ render()
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
-          <div className="col s4 m4 l4">Yas, Gawd!</div>
-          <div className="col s4 m4 l4">Miami-Dade Trivia</div>
-          <div className="col s4 m4 l4">Zelda Gem Collector</div>
+          <div className="col s12 m4 l4">Yas, Gawd!</div>
+          <div className="col s12 m4 l4">Miami-Dade Trivia</div>
+          <div className="col s12 m4 l4">Zelda Gem Collector</div>
           </div>
           </div>
         <div className="row collapsible-body">
@@ -725,9 +725,9 @@ render()
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
-          <div className="col s4 m4 l4">Anime Guessing Game</div>
-          <div className="col s4 m4 l4">Psychic Game</div>
-          <div className="col s4 m4 l4"></div>
+          <div className="col s12 m4 l4">Anime Guessing Game</div>
+          <div className="col s12 m4 l4">Psychic Game</div>
+          <div className="col s12 m4 l4"></div>
           </div>
           </div>
       <div className="row collapsible-body">

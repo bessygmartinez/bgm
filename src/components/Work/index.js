@@ -1,7 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import "./work.css";
 
-function Work() {
+class Work extends Component {
+
+render()
+ {
+      
   return (
     <div>
       <div className="row">
@@ -146,7 +150,16 @@ function Work() {
       {/* End Row 1 */}
 
       {/* Row 2 */}
+      <ul className="collapsible trans-bg">
+          <li>
+      <div className="collapsible-header blue-grey-text text-darken-1 "><i className="material-icons">expand_more</i>
       <div className="row">
+          <div className="col s4 m4 l4">Defunct Disney</div>
+          <div className="col s4 m4 l4">Raspa El Platano</div>
+          <div className="col s4 m4 l4">Tempo</div>
+          </div>
+      </div>
+      <div className="row collapsible-body">
         {/* Row 2, Space 1 of 3 */}
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
@@ -229,6 +242,7 @@ function Work() {
         </div>
 
         {/* Row 2, Space 3 of 3 */}
+
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
@@ -275,10 +289,21 @@ function Work() {
           </div>
         </div>
       </div>
+      </li>
+      </ul>
       {/* End Row 2 */}
 
       {/* Row 3 */}
-      <div className="row">
+      <ul className="collapsible trans-bg">
+          <li>
+          <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
+          <div className="row">
+          <div className="col s4 m4 l4">Good Burger Log</div>
+          <div className="col s4 m4 l4">Waifu Finder</div>
+          <div className="col s4 m4 l4">Bamazon</div>
+          </div>
+      </div>
+        <div className="row collapsible-body">
         {/* Row 3, Space 1 of 3 */}
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
@@ -406,10 +431,21 @@ function Work() {
           </div>
         </div>
       </div>
+      </li>
+      </ul>
       {/* End Row 3 */}
 
       {/* Row 4 */}
-      <div className="row">
+      <ul className="collapsible trans-bg">
+          <li>
+          <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
+          <div className="row">
+          <div className="col s4 m4 l4">LIRI</div>
+          <div className="col s4 m4 l4">Scene It</div>
+          <div className="col s4 m4 l4">Train Data Limited</div>
+          </div>
+          </div>
+      <div className="row collapsible-body">
         {/* Row 4, Space 1 of 3 */}
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
@@ -537,10 +573,21 @@ function Work() {
           </div>
         </div>
       </div>
+      </li>
+      </ul>
       {/* End Row 4 */}
 
       {/* Row 5 */}
-      <div className="row">
+      <ul className="collapsible trans-bg">
+          <li>
+          <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
+          <div className="row">
+          <div className="col s4 m4 l4">Yas, Gawd!</div>
+          <div className="col s4 m4 l4">Miami-Dade Trivia</div>
+          <div className="col s4 m4 l4">Zelda Gem Collector</div>
+          </div>
+          </div>
+        <div className="row collapsible-body">
         {/* Row 5, Space 1 of 3 */}
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
@@ -669,10 +716,21 @@ function Work() {
           </div>
         </div>
       </div>
+      </li>
+      </ul>
       {/* End Row 5 */}
 
       {/* Row 6 */}
-      <div className="row">
+      <ul className="collapsible trans-bg">
+          <li>
+          <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
+          <div className="row">
+          <div className="col s4 m4 l4">Anime Guessing Game</div>
+          <div className="col s4 m4 l4">Psychic Game</div>
+          <div className="col s4 m4 l4"></div>
+          </div>
+          </div>
+      <div className="row collapsible-body">
         {/* Row 6, Space 1 of 3 */}
         <div className="col s12 m6 l4">
           <div className="card trans-bg sticky-action">
@@ -768,12 +826,15 @@ function Work() {
         <div className="col s12 m6 l4">
         </div>
       </div>
+      </li>
+      </ul>
       {/* End Row 6 */}
 
       {/* End of work thumbnails section */}
 
     </div>
   );
+}
 }
 
 export default Work;

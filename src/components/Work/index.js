@@ -10,7 +10,7 @@ render()
     <div>
       <div className="row">
         <div className="col s12">
-          <h3>Drizzle of Design</h3>
+          <h3>Projects</h3>
         </div>
       </div>
 
@@ -152,12 +152,10 @@ render()
       {/* Row 2 */}
       <ul className="collapsible trans-bg">
           <li>
-      <div className="collapsible-header blue-grey-text text-darken-1 "><i className="material-icons">expand_more</i>
+      <div className="collapsible-header blue-grey-text text-darken-1">
       <div className="row">
-          <div className="col s12 m4 l4">Defunct Disney</div>
-          <div className="col s12 m4 l4">Raspa El Platano</div>
-          <div className="col s12 m4 l4">Tempo</div>
-          </div>
+          <div className="col s12 m12 l12 center-align">More Projects...</div>
+          </div><i className="material-icons">expand_more</i>
       </div>
       <div className="row collapsible-body">
         {/* Row 2, Space 1 of 3 */}
@@ -289,20 +287,20 @@ render()
           </div>
         </div>
       </div>
-      </li>
-      </ul>
+      {/* </li>
+      </ul> */}
       {/* End Row 2 */}
 
       {/* Row 3 */}
-      <ul className="collapsible trans-bg">
-          <li>
-          <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
+      {/* <ul className="collapsible trans-bg">
+          <li> */}
+          {/* <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
           <div className="col s12 m4 l4">Good Burger Log</div>
           <div className="col s12 m4 l4">Waifu Finder</div>
           <div className="col s12 m4 l4">Bamazon</div>
           </div>
-      </div>
+      </div> */}
         <div className="row collapsible-body">
         {/* Row 3, Space 1 of 3 */}
         <div className="col s12 m6 l4">
@@ -431,12 +429,10 @@ render()
           </div>
         </div>
       </div>
-      </li>
-      </ul>
       {/* End Row 3 */}
 
       {/* Row 4 */}
-      <ul className="collapsible trans-bg">
+      {/* <ul className="collapsible trans-bg">
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
@@ -444,7 +440,7 @@ render()
           <div className="col s12 m4 l4">Scene It</div>
           <div className="col s12 m4 l4">Train Data Limited</div>
           </div>
-          </div>
+          </div> */}
       <div className="row collapsible-body">
         {/* Row 4, Space 1 of 3 */}
         <div className="col s12 m6 l4">
@@ -573,12 +569,10 @@ render()
           </div>
         </div>
       </div>
-      </li>
-      </ul>
       {/* End Row 4 */}
 
       {/* Row 5 */}
-      <ul className="collapsible trans-bg">
+      {/* <ul className="collapsible trans-bg">
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
@@ -586,7 +580,7 @@ render()
           <div className="col s12 m4 l4">Miami-Dade Trivia</div>
           <div className="col s12 m4 l4">Zelda Gem Collector</div>
           </div>
-          </div>
+          </div> */}
         <div className="row collapsible-body">
         {/* Row 5, Space 1 of 3 */}
         <div className="col s12 m6 l4">
@@ -716,12 +710,10 @@ render()
           </div>
         </div>
       </div>
-      </li>
-      </ul>
       {/* End Row 5 */}
 
       {/* Row 6 */}
-      <ul className="collapsible trans-bg">
+      {/* <ul className="collapsible trans-bg">
           <li>
           <div className="collapsible-header blue-grey-text text-darken-1"><i className="material-icons">expand_more</i>
           <div className="row">
@@ -729,7 +721,7 @@ render()
           <div className="col s12 m4 l4">Psychic Game</div>
           <div className="col s12 m4 l4"></div>
           </div>
-          </div>
+          </div> */}
       <div className="row collapsible-body">
         {/* Row 6, Space 1 of 3 */}
         <div className="col s12 m6 l4">

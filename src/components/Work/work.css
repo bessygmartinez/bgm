@@ -1,7 +1,7 @@
 .work {
     width: 100%;
     position: relative;
-    margin-top: -210%;
+    margin-top: -213%;
     background-color: transparent;
     z-index: 1;
     padding: 0 8% 0 8%;
@@ -120,7 +120,7 @@ table {
 
  @media only screen and (min-width: 650px) {
      .work {
-         margin-top: -63%;
+         margin-top: -60%;
      }
 
      .work-row {

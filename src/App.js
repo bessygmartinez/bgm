@@ -5,8 +5,9 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import sun from "./sun.svg"
-import cloud1 from "./components/Skills/cloud1.svg";
 import drop from "./components/Skills/drop.svg";
+import Footer from "./components/Footer";
+import Flowers from "./components/Flowers";
 import $ from "jquery";
 import "./App.css";
 
@@ -118,22 +119,32 @@ class App extends Component {
         <div className="work">
           <Work />
         </div>
+          <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow rain">
+          <div className="ac-animated-svg-icon-contents rain">
+          <div className="ac-animated-svg-cloudrain rain">
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-4"></img>
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-5"></img>
+                  <img src={drop} alt="drop" className="svg-drop svg-drop-6"></img>
+            </div>
+            </div>
+            </div>
 
-                <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow rain">
-				<div className="ac-animated-svg-icon-contents rain">
-				<div className="ac-animated-svg-cloudrain rain">
-                <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-4"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-5"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-6"></img>
+      <Footer />
 
-                </div>
-                </div>
-                </div>
-        
+      
+
+      <div className="row bottom-dirt">
+        <Flowers />
+        <div className="col s12 m12 l12">
+           <p>&nbsp;</p>
+        </div>
+    </div>
+         
       </div>
+
     </div>
     )
   }

@@ -17,8 +17,8 @@
 
 .flower1-animation {
 
-        -webkit-animation: wind-five 4s ease alternate infinite;
-        animation: wind-five 4s ease alternate infinite;
+        -webkit-animation: wind-five 2.5s ease alternate infinite;
+        animation: wind-five 2.5s ease alternate infinite;
         transform: rotate(-0.5deg);
         transform-origin: 75% 100% ;
         }

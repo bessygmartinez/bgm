@@ -11,7 +11,7 @@ render()
           <div className="row">
               <div className="col s12 m12 l12 center-align">
 <div className="flower1-animation">
-  <div className="center"></div>
+  <div className="flower-center"></div>
   <div className="stem"></div>
   <div className="leaf leaf-right"></div>
   <div className="leaf leaf-left"></div>

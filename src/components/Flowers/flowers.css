@@ -17,13 +17,13 @@
 
 .flower1-animation {
 
-        -webkit-animation: wind-five 3s ease alternate infinite;
-        animation: wind-five 3s ease alternate infinite;
+        -webkit-animation: wind-five 4s ease alternate infinite;
+        animation: wind-five 4s ease alternate infinite;
         transform: rotate(-0.5deg);
-        transform-origin: 30% 100% ;
+        transform-origin: 75% 100% ;
         }
 
-.center {
+.flower-center {
   width: 1.75em;
   height: 1.75em;
   border-radius: 50%;
@@ -260,33 +260,33 @@
   
   @media only screen and (min-width: 650px) {
 
-    .center {
-        left: 25em;
+    .flower-center {
+        left: 65em;
       }
 
         .petal1 {
-          left: 25em;
+          left: 65em;
         }
         .petal2 {
-          left: 26.3em;
+          left: 66.3em;
         }
         .petal3 {
-          left: 26em;
+          left: 66em;
         }
         .petal4 {
-          left: 24.2em;
+          left: 64.2em;
         }
         .petal5 {
-          left: 23.8em;
+          left: 63.8em;
         }
         .stem {
-          left: 25.8em;
+          left: 65.8em;
         }
         .leaf-right {
-          left: 25.7em;
+          left: 65.7em;
         }
         .leaf-left {
-          left: 23.7em;
+          left: 63.7em;
 
         }
 

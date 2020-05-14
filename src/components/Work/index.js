@@ -823,7 +823,7 @@ render()
       {/* End Row 6 */}
 
       {/* End of work thumbnails section */}
-
+          <div id="contact"></div>
     </div>
   );
 }

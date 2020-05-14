@@ -48,13 +48,13 @@ function Skills() {
 
 
 
-                    <div className="cloud4-svg hide-me clearfix">
+                    <div className="cloud4-svg hide-me clearfix" >
                     <img src={cloud1} alt="rain cloud" className="cloud2 vibrate-2 hide-me"></img>
                     </div>
 
-                <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow rain">
-				<div className="ac-animated-svg-icon-contents rain">
-				<div className="ac-animated-svg-cloudrain rain">
+                <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow rain" >
+				<div className="ac-animated-svg-icon-contents rain" id="work">
+				<div className="ac-animated-svg-cloudrain rain" >
                 <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
                 <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>

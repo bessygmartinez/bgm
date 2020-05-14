@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 import "./nav.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 class Nav extends React.Component {
   handleToggle = () => {
@@ -23,11 +24,28 @@ class Nav extends React.Component {
           <div className="nav-items">
               <div className="nav-col">
                   <h2>About Me</h2>
-                  <p>Who am I?</p>
+                  <AnchorLink href="#about-me" onClick={this.handleToggle}><p>Who am I?</p></AnchorLink>
               </div>
               <div className="nav-col">
-                  <h2>My Work</h2>
-                  <p>Here's my work</p>
+                  <h2>Projects</h2>
+                  <AnchorLink href="#work" onClick={this.handleToggle}><p>Here are my projects</p></AnchorLink>
+              </div>
+              <div className="nav-col">
+                  <h2>Contact</h2>
+                  <AnchorLink href="#contact" onClick={this.handleToggle}><p>Drop Me A Line</p></AnchorLink>
+              </div>
+              <div className="nav-col">
+              <p><a href="https://www.linkedin.com/in/bessygmartinez/" target="_blank" rel="noopener noreferrer"
+              className="tooltipped" data-position="left" data-tooltip="LinkedIn">
+                 <ion-icon name="logo-linkedin" size="large"></ion-icon></a></p><br></br>
+
+             <p><a href="https://github.com/bessygmartinez" target="_blank" rel="noopener noreferrer"
+             className="tooltipped" data-position="left" data-tooltip="GitHub">
+             <ion-icon name="logo-github" size="large"></ion-icon></a></p><br></br>
+
+             <AnchorLink href="#contact" onClick={this.handleToggle}
+             className="tooltipped" data-position="left" data-tooltip="Send a Message">
+             <ion-icon name="mail-sharp" size="large"></ion-icon></AnchorLink>
               </div>
           </div>
           <div className="nav-bg"></div>

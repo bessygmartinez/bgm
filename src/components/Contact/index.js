@@ -10,7 +10,7 @@ render()
       <div>
           <div className="row contact-div">
               <form className="col s12 m12 l12">
-                  <h3>Say Hi</h3>
+                  <h3>Send a Message</h3>
                   <div className="row">
                       <div className="input-field col s6 m6 l6">
                           <input id="first_name" type="text" className="validate"></input>

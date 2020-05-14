@@ -5,7 +5,6 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import sun from "./sun.svg";
-import drop from "./components/Skills/drop.svg";
 import Footer from "./components/Footer";
 import Flowers from "./components/Flowers";
 import Contact from "./components/Contact";

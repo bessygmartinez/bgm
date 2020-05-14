@@ -8,7 +8,7 @@
     bottom: 30px;
     right: -30px;
     position: fixed;
-    z-index: 100;
+    z-index: 50;
 }
 
 ion-icon {

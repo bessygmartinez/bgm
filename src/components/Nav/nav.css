@@ -16,6 +16,7 @@
 }
 
 .nav-items {
+    color: #edfdf8;
     opacity:0;
     text-align: left;
     position: absolute;
@@ -27,13 +28,33 @@
     height: 0%;
 }
 
+.nav-items a {
+    display: none;
+    height: 0;
+}
+
+.nav-items.active a {
+    color: #f7e06c;
+    text-decoration: underline;
+    height: 100%;
+    display: inline-block
+}
+
+.nav-items a:hover {
+    color: #f5e7a0;
+    text-decoration: overline;
+}
+
 .nav-items h2 {
     margin: 0;
     font-size: 0;
+    text-shadow: 2px 2px 2px #53241c;
 }
 
 .nav-items p {
+    font-size: 1.8rem;
     margin: 0;
+    text-shadow: 1px 1px 1px #53241c;
 }
 
 .nav-items.active {
@@ -57,6 +78,14 @@
 
 .nav-items.active .nav-col {
     height: fit-content;
+}
+
+.nav-items.active ion-icon {
+    color: #f7e06c;
+  }
+
+.nav-items.active ion-icon:hover {
+    color: #f5e7a0;
 }
 
 .nav-bg {

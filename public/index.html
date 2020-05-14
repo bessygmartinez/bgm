@@ -46,11 +46,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.collapsible');
-      var instances = M.Collapsible.init(elems);
+      let elems = document.querySelectorAll('.collapsible');
+      let instances = M.Collapsible.init(elems);
+
+      let elems2 = document.querySelectorAll('.tooltipped');
+      let instances2 = M.Tooltip.init(elems2, {margin: 2});
     })
     </script>
     <script src="%PUBLIC_URL%/assets/js/words.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

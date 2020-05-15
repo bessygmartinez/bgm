@@ -30,21 +30,21 @@ class Nav extends React.Component {
                   <h2>Projects</h2>
                   <AnchorLink href="#work" onClick={this.handleToggle}><p>Here are my projects</p></AnchorLink>
               </div>
-              <div className="nav-col">
+              <div className="nav-col nav-col-contact">
                   <h2>Contact</h2>
                   <AnchorLink href="#contact" onClick={this.handleToggle}><p>Drop Me A Line</p></AnchorLink>
               </div>
-              <div className="nav-col">
-              <p><a href="https://www.linkedin.com/in/bessygmartinez/" target="_blank" rel="noopener noreferrer"
-              className="tooltipped" data-position="left" data-tooltip="LinkedIn">
-                 <ion-icon name="logo-linkedin" size="large"></ion-icon></a></p><br></br>
+              <div className="nav-col nav-col-icons">
+              <a href="https://www.linkedin.com/in/bessygmartinez/" target="_blank" rel="noopener noreferrer"
+              className="tooltipped" data-position="top" data-tooltip="LinkedIn">
+                 <ion-icon name="logo-linkedin" size="large"></ion-icon></a> &nbsp;&nbsp;
 
-             <p><a href="https://github.com/bessygmartinez" target="_blank" rel="noopener noreferrer"
-             className="tooltipped" data-position="left" data-tooltip="GitHub">
-             <ion-icon name="logo-github" size="large"></ion-icon></a></p><br></br>
+             <a href="https://github.com/bessygmartinez" target="_blank" rel="noopener noreferrer"
+             className="tooltipped" data-position="top" data-tooltip="GitHub">
+             <ion-icon name="logo-github" size="large"></ion-icon></a> &nbsp;&nbsp;
 
              <AnchorLink href="#contact" onClick={this.handleToggle}
-             className="tooltipped" data-position="left" data-tooltip="Send a Message">
+             className="tooltipped" data-position="top" data-tooltip="Send a Message">
              <ion-icon name="mail-sharp" size="large"></ion-icon></AnchorLink>
               </div>
           </div>

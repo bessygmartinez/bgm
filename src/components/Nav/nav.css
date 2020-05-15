@@ -52,7 +52,7 @@
 }
 
 .nav-items p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
     text-shadow: 1px 1px 1px #53241c;
 }
@@ -65,8 +65,8 @@
 }
 
 .nav-items.active h2 {
-    font-size: 3.56rem;
-    line-height: 110%;
+    font-size: 2rem;
+    line-height: 10%;
     margin: 2.3733333333rem 0 1.424rem 0;
 }
 
@@ -78,6 +78,11 @@
 
 .nav-items.active .nav-col {
     height: fit-content;
+}
+
+.row.nav-icons-row {
+    height: 100%;
+    margin-top: 0px;
 }
 
 .nav-items.active ion-icon {
@@ -192,4 +197,29 @@
     transform: rotate(-45deg);
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+}
+
+@media only screen and (min-width: 650px) {
+    
+    .nav-items.active h2 {
+        font-size: 3.56rem;
+        line-height: 110%;
+    }
+
+    .nav-items p {
+        font-size: 1.8rem;
+    }
+
+    .nav-col a {
+        margin-top: 10px;
+    }
+
+    .nav-col-contact {
+        margin-right: 7%;
+    }
+
+    .nav-col-icons {
+        margin-top: 100px;
+    }
+
 }

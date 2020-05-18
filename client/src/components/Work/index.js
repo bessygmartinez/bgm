@@ -23,7 +23,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/DreMartinez_thumb.jpg"
+                src="/assets/img/work/DreMartinez_thumb.jpg"
                 alt="Dre Martinez"
                 className="activator workpic responsive-img"
                 width="100%"
@@ -57,7 +57,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/kairos_thumb.jpg"
+                src="/assets/img/work/kairos_thumb.jpg"
                 alt="kairos"
                 className="activator workpic"
                 width="100%"
@@ -103,7 +103,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/GoogleBooksSearch_thumb.jpg"
+                src="/assets/img/work/GoogleBooksSearch_thumb.jpg"
                 alt="Google Books Search"
                 className="activator workpic"
                 width="100%"
@@ -163,7 +163,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/DefunctDisney_thumb.jpg"
+                src="/assets/img/work/DefunctDisney_thumb.jpg"
                 alt="Defunct Disney"
                 className="activator workpic responsive-img"
                 width="100%"
@@ -199,7 +199,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/RaspaElPlatano_thumb.jpg"
+                src="/assets/img/work/RaspaElPlatano_thumb.jpg"
                 alt="Raspa El Platano"
                 className="activator workpic"
                 width="100%"
@@ -245,7 +245,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/Tempo_thumb.jpg"
+                src="/assets/img/work/Tempo_thumb.jpg"
                 alt="Tempo"
                 className="activator workpic"
                 width="100%"
@@ -307,7 +307,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/GoodBurger_thumb.jpg"
+                src="/assets/img/work/GoodBurger_thumb.jpg"
                 alt="Good Burger Log"
                 className="activator workpic responsive-img"
                 width="100%"
@@ -343,7 +343,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/WaifuFinder_thumb.jpg"
+                src="/assets/img/work/WaifuFinder_thumb.jpg"
                 alt="Waifu Finder"
                 className="activator workpic"
                 width="100%"
@@ -387,7 +387,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/bamazonJS_thumb.jpg"
+                src="/assets/img/work/bamazonJS_thumb.jpg"
                 alt="Bamazon"
                 className="activator workpic"
                 width="100%"
@@ -447,7 +447,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/LIRIjs_thumb.jpg"
+                src="/assets/img/work/LIRIjs_thumb.jpg"
                 alt="LIRI"
                 className="activator workpic responsive-img"
                 width="100%"
@@ -483,7 +483,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/SceneIt_thumb.jpg"
+                src="/assets/img/work/SceneIt_thumb.jpg"
                 alt="Scene It"
                 className="activator workpic"
                 width="100%"
@@ -527,7 +527,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/TheTrain_thumb.jpg"
+                src="/assets/img/work/TheTrain_thumb.jpg"
                 alt="Train Data Limited"
                 className="activator workpic"
                 width="100%"
@@ -587,7 +587,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/YasGawd_thumb.jpg"
+                src="/assets/img/work/YasGawd_thumb.jpg"
                 alt="Yas, Gawd!"
                 className="activator workpic"
                 width="100%"
@@ -635,7 +635,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/MiamiDadeBro_thumb.jpg"
+                src="/assets/img/work/MiamiDadeBro_thumb.jpg"
                 alt="Miami-Dade Trivia"
                 className="activator workpic responsive-img"
                 width="100%"
@@ -671,7 +671,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/zeldagem_thumb.jpg"
+                src="/assets/img/work/zeldagem_thumb.jpg"
                 alt="Zelda Gem Collector"
                 className="activator workpic"
                 width="100%"
@@ -728,7 +728,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/animegirl_thumb.png"
+                src="/assets/img/work/animegirl_thumb.png"
                 alt="Anime Guessing Game"
                 className="activator workpic"
                 width="100%"
@@ -775,7 +775,7 @@ render()
           <div className="card trans-bg sticky-action">
             <div className="card-image waves-effect waves-block waves-light workpic-div">
               <img
-                src="/bgm/assets/img/work/PsychicGame_thumb.jpg"
+                src="/assets/img/work/PsychicGame_thumb.jpg"
                 alt="Psychic Game"
                 className="activator workpic"
                 width="100%"

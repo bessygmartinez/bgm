@@ -77,7 +77,7 @@ render()
                       <button className="btn btn-flat btn-orange waves-effect waves-light"
                       type="submit"
                       name="action"
-                      onClick="M.toast({html: 'I am a toast'})">Submit
+                      >Submit
                     <i className="material-icons right">send</i>
                     </button>
                       </div>

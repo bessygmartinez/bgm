@@ -8,7 +8,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post("/api/form", (req, res) => {
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
+
+app.post("/bgm/api/form", (req, res) => {
     nodemailer.createTestAccount((err, account) => {
         const htmlEmail = `
         <h3>Contact Details</h3>

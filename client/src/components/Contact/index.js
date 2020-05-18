@@ -25,7 +25,7 @@ class Contact extends Component {
 
         const { name, email, message } = this.state
 
-        const form = await axios.post('/bgm/api/form', {
+        const form = await axios.post('/api/form', {
             name, 
             email, 
             message

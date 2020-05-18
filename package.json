@@ -13,7 +13,7 @@
     "build": "cd client && npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "deploy": "cd client && gh-pages -d build"
+    "deploy": "cd client && npm run deploy"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "homepage": "https://bessygmartinez.github.io/bgm/",
+  "homepage": "https://secure-sands-52011.herokuapp.com/",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "server": "nodemon server.js",

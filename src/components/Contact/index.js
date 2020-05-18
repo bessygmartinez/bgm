@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./contact.css";
+import axios from "axios";
 
 class Contact extends Component {
     constructor() {
@@ -12,16 +13,23 @@ class Contact extends Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
     
     handleChange = e => {
             this.setState({ [e.target.name]: e.target.value })
         }
 
-    handleSubmit(e) {
+    async handleSubmit(e) {
         e.preventDefault();
 
-        const { name, email, message } = this.state;
+        const { name, email, message } = this.state
+
+        const form = await axios.post('/api/form', {
+            name, 
+            email, 
+            message
+        })
     }
 
 render()

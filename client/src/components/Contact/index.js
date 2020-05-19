@@ -25,12 +25,13 @@ class Contact extends Component {
 
         const { name, email, message } = this.state
 
-        const form = await axios.post('/api/form', {
+        await axios.post('/api/form', {
             name, 
             email, 
             message
         }).then((res => {
-            console.log(res.json());
+            res.end();
+            console.log("success!");
         }))
     }
 

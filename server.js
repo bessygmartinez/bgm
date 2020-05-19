@@ -51,7 +51,11 @@ app.post("/api/form", (req, res) => {
             console.log('Message sent: %s', info.messageId)
             console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
         })
+        
+        transporter.close();
 });
+
+
 
 const PORT = process.env.PORT || 3001;
 

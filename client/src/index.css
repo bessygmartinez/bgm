@@ -225,6 +225,10 @@ p {
     width: fit-content;
     height: 48px;
 }
+
+.scroll-down.bounce-top small {
+  margin-left: 15%;
+}
 }
 
 .scroll-down.bounce-top {

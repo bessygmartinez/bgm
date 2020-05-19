@@ -29,7 +29,9 @@ class Contact extends Component {
             name, 
             email, 
             message
-        })
+        }).then((res => {
+            console.log(res);
+        }))
     }
 
 render()

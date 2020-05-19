@@ -30,7 +30,7 @@ class Contact extends Component {
             email, 
             message
         }).then((res => {
-            console.log(res);
+            console.log(res.json());
         }))
     }
 

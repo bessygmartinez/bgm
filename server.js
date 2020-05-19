@@ -2,18 +2,20 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path");
 const nodemailer = require("nodemailer");
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use("/public", express.static(path.join(__dirname, "public")));
+
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
 app.post("/api/form", (req, res) => {
-    nodemailer.createTestAccount((err, account) => {
         const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -49,8 +51,6 @@ app.post("/api/form", (req, res) => {
             console.log('Message sent: %s', info.messageId)
             console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
         })
-
-    })
 });
 
 const PORT = process.env.PORT || 3001;

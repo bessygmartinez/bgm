@@ -8,12 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-if(process.env.NODE_ENV === 'production'){
-    const path  =  require('path');
-    app.get('/*',(req,res)=>{
-        res.sendfile(path.resolve(__dirname,'client','build','index.html'))
-    })
-}
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
 
 app.post("/api/form", (req, res) => {
     nodemailer.createTestAccount((err, account) => {

@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-app.post("/api/form", (req, res) => {
+app.post("/api/form", (req, res, next) => {
         const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -35,6 +35,14 @@ app.post("/api/form", (req, res) => {
             }
         })
 
+        transporter.verify((error, success) => {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log("Server is ready to take messages");
+            }
+        });
+
         let mailOptions = {
             from: req.body.email,
             to: "bessygmartinez83@gmail.com",
@@ -44,9 +52,15 @@ app.post("/api/form", (req, res) => {
             html: htmlEmail
         }
 
-        transporter.sendMail(mailOptions, (err, info) => {
+        transporter.sendMail(mailOptions, (err, data) => {
             if (err) {
-            return console.log(err)
+            res.json({
+                msg: "fail"
+            })
+            } else {
+                res.json({
+                    msg: "success"
+                })
             }
 
             console.log('Message sent: %s', info.messageId)

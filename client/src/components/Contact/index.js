@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import M from "materialize-css";
+import "materialize-css/dist/css/materialize.min.css";
 import "./contact.css";
 import axios from "axios";
 
@@ -25,11 +27,16 @@ class Contact extends Component {
 
         const { name, email, message } = this.state
 
-        await axios.post('/api/form', {
+        await axios.post("/api/form", {
             name, 
             email, 
             message
         }).then((res => {
+            M.toast({
+                html: "Message Sent!",
+                classes: "rounded",
+                displayLength: 3000
+            })
             console.log("success!");
         }))
     }

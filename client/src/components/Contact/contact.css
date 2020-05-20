@@ -31,6 +31,7 @@
 
 input, textarea {
   color: #edfdf8;
+  background-color: transparent !important;
   text-shadow: 1px 1px 1px #354e44;
   font: 400 16px 'Nunito', sans-serif;
 }
@@ -100,6 +101,13 @@ input, textarea {
     background-color: #f7e06c
 }
 
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 80%;
+  left:45%;  
+}
+
 /**
  * ----------------------------------------
  * MEDIA QUERIES
@@ -107,6 +115,13 @@ input, textarea {
  */
 
  @media only screen and (min-width: 650px) {
+
+  #toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 80%;
+    left:45%;  
+  }
 
     .contact-div {
         margin: 5% auto 14%;

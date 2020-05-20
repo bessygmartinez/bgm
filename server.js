@@ -28,7 +28,6 @@ app.post("/api/form", (req, res, next) => {
 
         let transporter = nodemailer.createTransport({
             service: 'Gmail',
-            port: 465,
             auth: {
                 user: 'bessygmartinez83@gmail.com',
                 pass: process.env.GMAIL_PASS
@@ -54,18 +53,17 @@ app.post("/api/form", (req, res, next) => {
 
         transporter.sendMail(mailOptions, (err, data) => {
             if (err) {
+                console.log("error")
             res.json({
                 msg: "fail",
                 err: err
             })
             } else {
+                console.log("successful")
                 res.json({
                     msg: "success"
                 })
             }
-
-            console.log('Message sent: %s', data.messageId)
-            console.log('Message URL: %s', nodemailer.getTestMessageUrl(data))
         })
         
         transporter.close();

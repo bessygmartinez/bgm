@@ -55,7 +55,8 @@ app.post("/api/form", (req, res, next) => {
         transporter.sendMail(mailOptions, (err, data) => {
             if (err) {
             res.json({
-                msg: "fail"
+                msg: "fail",
+                err: err
             })
             } else {
                 res.json({

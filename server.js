@@ -3,6 +3,8 @@ dotenv.config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 const nodemailer = require("nodemailer");
 const app = express();
 
@@ -14,6 +16,18 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
+
+const oauth2Client = new OAuth2(
+    process.env.GMAIL_CLIENTID, // ClientID
+    process.env.GMAIL_CLIENTSECRET, // Client Secret
+    "https://developers.google.com/oauthplayground" // Redirect URL
+);
+
+oauth2Client.setCredentials({
+    refresh_token: process.env.GMAIL_REFRESHTOKEN
+});
+
+const accessToken = oauth2Client.getAccessToken()
 
 app.post("/api/form", (req, res, next) => {
         const htmlEmail = `
@@ -32,9 +46,13 @@ app.post("/api/form", (req, res, next) => {
                 rejectUnauthorized: false
             },
             auth: {
+                type: 'OAuth2',
                 user: 'bessygmartinez83@gmail.com',
-                pass: process.env.GMAIL_PASS
-            }
+                clientId: process.env.GMAIL_CLIENTID,
+                clientSecret: process.env.GMAIL_CLIENTSECRET,
+                refreshToken: process.env.GMAIL_REFRESHTOKEN,
+                accessToken: accessToken
+                }
         })
 
         transporter.verify((error, success) => {

@@ -11,6 +11,9 @@ import Contact from "./components/Contact";
 import $ from "jquery";
 import "./App.css";
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 class App extends Component {
   componentDidMount() {
     this.onScriptLoad();
@@ -84,6 +87,7 @@ class App extends Component {
 
     return (
       <div>
+        <Provider store = { store }>
         <Nav />
 
         <div className="container">
@@ -137,6 +141,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        </Provider>
       </div>
     );
   }

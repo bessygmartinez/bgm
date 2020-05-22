@@ -1,17 +1,22 @@
 import React, { Component } from "react";
-import M from "materialize-css";
+// import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import "./contact.css";
-import axios from "axios";
+import classnames from 'classnames';
+// import axios from "axios";
+
+import { sendMessage } from '../../actions/authentication';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
 
 class Contact extends Component {
     constructor() {
         super()
 
         this.state = {
-            name: '',
-            email: '',
-            message: ''
+            errors: {}
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -22,37 +27,67 @@ class Contact extends Component {
             this.setState({ [e.target.name]: e.target.value })
         }
 
-    async handleSubmit(e) {
+    handleSubmit(e) {
         e.preventDefault();
 
-        const { name, email, message } = this.state
+        const data = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        }
 
-        await axios.post("/api/form", {
-            name, 
-            email, 
-            message
-        }).then((res => {
-            M.toast({
-                html: "Message Sent!",
-                classes: "rounded",
-                displayLength: 3000
-            })
+        // const { name, email, message } = this.state
 
+        // await axios.post("/api/form", {
+        //     name, 
+        //     email, 
+        //     message
+        // }).then((res => {
+        //     M.toast({
+        //         html: "Message Sent!",
+        //         classes: "rounded",
+        //         displayLength: 3000
+        //     })
+
+            this.props.sendMessage(data)
+
+
+            // this.setState({
+            //     name: '',
+            //     email: '',
+            //     message: ''
+            // });
+
+            // document.getElementById("contact-form").reset();
+
+            // console.log("success!");
+
+    }
+
+    UNSAFE_componentWillReceiveProps(nextProps) {
+        if(nextProps.errors) {
             this.setState({
-                name: '',
-                email: '',
-                message: ''
+                errors: nextProps.errors
             });
+        }
 
-            document.getElementById("contact-form").reset();
+        let keys = Object.keys(nextProps.errors);
 
-            console.log("success!");
-        }))
+        if(keys.length === 0) {
+            this.setState({
+                name: nextProps.name,
+                email: nextProps.email,
+                message: nextProps.message,
+                errors: nextProps.errors
+            })
+        }
     }
 
 render()
+
  {
-      
+    const { errors } = this.state;
+    
   return (
       <div>
           <div className="row contact-div">
@@ -67,8 +102,11 @@ render()
                           id="name"
                           name="name"
                           type="text"
-                          className="validate"
+                          className={classnames('', {
+                            'invalid': errors.name
+                        })}
                           onChange={this.handleChange} />
+                          {errors.name && (<div className="invalid-feedback">{errors.name}</div>)}
                           <label htmlFor="name">Name</label>
                       </div>
                       <div className="input-field col s6 m6 l6">
@@ -76,8 +114,11 @@ render()
                           id="email"
                           name="email"
                           type="email"
-                          className="validate"
+                          className={classnames('', {
+                            'invalid': errors.email
+                        })}
                           onChange={this.handleChange} />
+                          {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
                           <label htmlFor="email">Email</label>
                       </div>
                   </div>
@@ -86,14 +127,17 @@ render()
                       <textarea
                       id="message"
                       name="message"
-                      className="materialize-textarea"
+                      className={classnames('materialize-textarea', {
+                        'invalid': errors.message
+                    })}
                       onChange={this.handleChange} />
+                      {errors.message && (<div className="invalid-feedback-textarea">{errors.message}</div>)}
                         <label htmlFor="message">Your Message</label>
                       </div>
                   </div>
                   <div className="row">
                       <div className="input-field col s12 m12 l12">
-                      <button className="btn btn-flat btn-orange waves-effect waves-light"
+                      <button className="btn btn-flat btn-orange waves-effect waves-yellow"
                       type="submit"
                       name="action"
                       >Submit
@@ -108,4 +152,15 @@ render()
  }
 }
 
-export default Contact;
+Contact.propTypes = {
+    sendMessage: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+    name: "",
+    email: "",
+    message: "",
+    errors: state.errors
+});
+
+export default connect(mapStateToProps,{ sendMessage })(withRouter(Contact))

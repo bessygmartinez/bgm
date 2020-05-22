@@ -29,7 +29,35 @@ oauth2Client.setCredentials({
 
 const accessToken = oauth2Client.getAccessToken()
 
+const validateFormInput = require("./validation/formValidation");
+
 app.post("/api/form", (req, res, next) => {
+
+    const { errors, isValid } = validateFormInput(req.body);
+
+    if(!isValid) {
+        return res.status(400).json(errors);
+    }
+
+    if (req.body.name.length === 0) {
+        return res.status(400).json({
+            name: "You must enter your name"
+        })
+    }
+
+    else if (req.body.email.length === 0) {
+        return res.status(400).json({
+            email: "You must enter your email"
+        })
+    }
+
+    else if (req.body.message.length === 0 ) {
+        return res.status(400).json({
+            message: "You must enter a message"
+        })
+    }
+
+    else {
         const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -88,6 +116,7 @@ app.post("/api/form", (req, res, next) => {
         })
         
         transporter.close();
+    }
 });
 
 

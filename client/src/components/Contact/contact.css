@@ -19,6 +19,9 @@
     font-size: 1.5rem;
 }
 
+label.active  {
+  color: #fff !important;
+}
 .btn {
   font: 400 16px 'Nunito', sans-serif;
   text-shadow: 1px 1px 1px #354e44;
@@ -111,6 +114,32 @@ input, textarea {
 
 .toast {
   max-width: 42% !important;
+}
+
+.invalid-feedback {
+  background-color: #ED5B46;
+  color: #fff;
+  text-shadow: none;
+  text-transform: capitalize;
+  padding: 0px 10px 0px 10px;
+  width: fit-content;
+  -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.invalid-feedback-textarea {
+  background-color: #ED5B46;
+  color: #fff;
+  text-shadow: none;
+  text-transform: capitalize;
+  padding: 0px 10px 0px 10px;
+  width: fit-content;
+  -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-top: -2px;
 }
 
 /**

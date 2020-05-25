@@ -137,6 +137,49 @@ p {
     opacity:0;
 }
 
+.bg-clouds {
+  width: 200x;
+  height: 300px;
+  position: fixed;
+}
+
+.bg-cloud1 {
+  top: 170px;
+  z-index: -200;
+  fill: #eeeeee2f;
+  /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+  -webkit-animation: move 22s linear infinite;
+  -moz-animation: move 22s linear infinite;
+  -o-animation: move 22s linear infinite;
+  animation: move 22s linear infinite;
+}
+
+.bg-cloud2 {
+  top: 0px;
+  z-index: -200;
+  fill: #eeeeee7a;
+  -webkit-animation: move 38s linear 17s infinite backwards;
+  -moz-animation: move 38s linear 17s infinite backwards;
+  -o-animation: move 38s linear 17s infinite backwards;
+  animation: move 38s linear 17s infinite backwards;
+}
+
+.bg-cloud3 {
+  top: 400px;
+  z-index: -200;
+  fill: #eeeeeece;
+  /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+  -webkit-animation: move 47s linear infinite;
+  -moz-animation: move 47s linear infinite;
+  -o-animation: move 47s linear infinite;
+  animation: move 47s linear infinite;
+}
+
+@keyframes move {
+  from {-webkit-transform: translateX(-400px);}
+  to {-webkit-transform: translateX(1350px);}
+}
+
 @keyframes fadeIn{
     0% {
         opacity:0;

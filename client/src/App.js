@@ -5,6 +5,9 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import sun from "./sun.svg";
+import bgcloud1 from "./bgcloud1.svg";
+import bgcloud2 from "./bgcloud2.svg";
+import bgcloud3 from "./bgcloud3.svg";
 import Footer from "./components/Footer";
 import Flowers from "./components/Flowers";
 import Contact from "./components/Contact";
@@ -87,6 +90,10 @@ class App extends Component {
 
     return (
       <div>
+        <img src={bgcloud1} alt="Background Cloud 1" className="bg-clouds bg-cloud1"/>          
+        <img src={bgcloud2} alt="Background Cloud 2" className="bg-clouds bg-cloud2"/>     
+        <img src={bgcloud3} alt="Bakcground Cloud 3" className="bg-clouds bg-cloud3"/>
+
         <Provider store = { store }>
         <Nav />
 
@@ -116,21 +123,8 @@ class App extends Component {
           <div className="work">
             <Work />
           </div>
-          {/* <div className="ac-animated-svg-icon ac-svg-animated ac-svg-shadow rain">
-            <div className="ac-animated-svg-icon-contents rain">
-              <div className="ac-animated-svg-cloudrain rain">
-                <img src={drop} alt="drop" className="svg-drop svg-drop-1"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-2"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-3"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-4"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-5"></img>
-                <img src={drop} alt="drop" className="svg-drop svg-drop-6"></img>
-              </div>
-            </div>
-            
-          </div> */}
-          <Contact />
-          
+
+          <Contact />        
 
           <Footer />
 
